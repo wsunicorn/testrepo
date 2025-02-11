@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Website</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            .banner {
+                /* min-width: 100vw; */
+                /* padding: 20px; */
+                /* justify-content: space-between; */
+                width: 100%;
+                display: block;
+            }
+            .menu {
+                background-color: orange;
+                /* justify-content: center; */
+                display: flex;
+            }
+            .menu a {
+                padding: 6px 35px;
+                text-decoration: None;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+            }
+            .menu a:hover {
+                background-color: rgb(246, 194, 176);
+                color: red;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                border-top: 3px solid white;
+                
+            }
+            .article {
+                flex: 2;
+                /* min-width: 600px; */
+                min-height: 500px;
+                background-color: rgb(60, 149, 97);
+                border-right: 10px solid white;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 15px 15px;
+            }
+            .asus {
+                padding: 10px 20px;
+                background-color: white;
+                border: 10px solid rgb(60, 149, 97);
+                text-align: center;
+            }
+            .asus p {
+                color: blue;
+            }
+            .asus del {
+                color: gray;
+            }
+            .aside {
+                flex: 1;
+                background-color: rgb(7, 108, 97);
+            }
+            .news {
+                display: flex;
+                margin-bottom: 5px;
+            }
+            .news p {
+                color: white
+            }
+
+            footer {
+                background-color: rgb(28, 113, 128);
+                border-top: 4px solid white;
+            }
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .content ul {
+                flex: 2;
+                /* list-style-type: circle; */
+                padding-top: 30px;
+                padding-left:50px;
+            }
+            .content ul li {
+                color: white;
+            }
+            .content div {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .content div img {
+                object-fit: contain;
+            }
+
+            footer p {
+                font-style: italic;
+                color: white;
+                text-align: center;
+                margin-top: 40px;
+                padding-bottom: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="https://drive.google.com/thumbnail?id=1ogYKmWDaOuUx9dENY68UBzEQgoUcb0_I" alt="banner" class="banner">
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#">News</a>
+            <a href="#">Concat</a>
+        </div>
+        <div class="container">
+            <div class="article">
+                <div class="asus">
+                    <img src="https://drive.google.com/thumbnail?id=1-KEZLzPdMdIVEcSqyh293K6OLsDwr4R_" alt="asus1">
+                    <p>price : <del>800$</del> 740$</p>
+                </div> 
+                <div class="asus">
+                    <img src="https://drive.google.com/thumbnail?id=1m5dG7BR8KGZVqEPeZMeg6kPc6PnXQNi0" alt="asus2">
+                    <p>price : <del>900$</del> 800$</p>
+                </div>    
+                <div class="asus">
+                    <img src="https://drive.google.com/thumbnail?id=1mgeOidCS9_GNPLyuCfG29KSUPuDU8PUe" alt="asus3">
+                    <p>price : <del>960$</del> 820$</p>
+                </div>    
+                <div class="asus">
+                    <img src="https://drive.google.com/thumbnail?id=15aRpFI-AD7KM6OdFc5hIizojXNdqwPEe" alt="asus4">
+                    <p>price : <del>900$</del> 800$</p>
+                </div>    
+                <div class="asus">
+                    <img src="https://drive.google.com/thumbnail?id=1ejlOVI3rk6DEEz7Nxz_jyz33gjKNfYTW" alt="asus5">
+                    <p>price : <del>1000$</del> 930$</p>
+                </div>    
+                <div class="asus">
+                    <img src="https://drive.google.com/thumbnail?id=1TuxOnttXpVng7JSzvksSTr4RmYB6Ahcm" alt="asus6">
+                    <p>price : <del>1100$</del> 970$</p>
+                </div>
+            </div>
+            <div class="aside">
+                <p style="background-color: rgb(23, 90, 28); color: white; text-align: center; padding: 2%; font-size: 18px;">News Technology</p>
+                <div class="news">
+                    <img src="https://drive.google.com/thumbnail?id=1hGaeiww2Oj_MRKeMBPw-fpv_RZ1jzNU3" alt="new1">
+                    <p>What do get With 7.5 million buy OPPO F3 users?</p>
+                </div>
+                <div class="news">
+                    <img src="https://drive.google.com/thumbnail?id=1LXBnYmjtrmH4rkqOKNQtLzNau80av-hC" alt="new1">
+                    <p>FPT Shop will be offering F-Plus for Galaxy S8 / S8 + customers from in September 2017!</p>
+                </div>
+                <div class="news">
+                    <img src="https://drive.google.com/thumbnail?id=1sYOS1GYxqNpEajMBoXB3lDwSaSS80CH8" alt="new1">
+                    <p>FPT Shop donates 1,500 coupon 800,000 VND for customers to receive Galaxy S8 on the first day of sale on Wednesday, December 3rd, 2017</p>
+                </div>
+                <div class="news">
+                    <img src="https://drive.google.com/thumbnail?id=1jdffXGOu0IShP8v-VT8KSRS_YOqFCRl2" alt="new1">
+                    <p>Come to experience Galaxy S8: just get T-shirt and have chance to hit 8 S8 Plus at FPT Shop!</p>
+                </div>
+                <div class="news">
+                    <img src="https://drive.google.com/thumbnail?id=1I7TZxxCWI-Dr_FMPw7vNF9yHn7ZFf9jK" alt="new1">
+                    <p>FPT Shop added 8 gifts to the US for Galaxy S8 / S8 Plus reservations</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="content">
+            <ul>
+                <li>Phone: 022243561234</li>
+                <li>About Dell</li>
+                <li>Laptop Dell photography</li>
+                <li>Dell in Business</li>
+                <li>Dell Inspiron</li>
+                <li>Dell vostro Products</li>
+            </ul>
+            <div>
+                <img src="https://drive.google.com/thumbnail?id=1JZTYvIbc_zWBGwTFiqab7uCwEEQkPyeS" alt="item">
+                <img src="https://drive.google.com/thumbnail?id=1L3l1SnvXTEJbM5NR1ASJeIqOOdvZF6Tk" alt="item">
+                <img src="https://drive.google.com/thumbnail?id=1X5XXsCJdEMZ-oQ80b4cbGVZwTqC5GSH3" alt="item">
+                <img src="https://drive.google.com/thumbnail?id=123_aMxNjDXxaext-RoHJK7TKVqXpACXx" alt="item">
+            </div>
+        </div>
+        <p>Copyright @ 2011-2017 Laptop Dell Communications Inc. All rights reserved</p>
+    </footer>
+</html>
